@@ -1,28 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/regbk"
+    >
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50px" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100px" />
+    <LinearLayout
+        android:layout_width="1000px"
+        android:layout_height="1400px"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="VE CARE"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        
+       <TableLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center">
+
+           <TableRow android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center" >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="20dp"
+                   android:text="Patient Name : "
+                   android:fontFamily="serif"
+                   />
+               <Space android:layout_width="20dp"
+                   android:layout_height="wrap_content"/>
+
+               <EditText
+                   android:id="@+id/rpname"
+                   android:layout_width="200dp"
+                   android:layout_height="wrap_content"
+                   android:textSize="20dp"
+                   android:fontFamily="serif"
+                   android:inputType="text"
+                   />
+
+           </TableRow>
+           <TableRow android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center" >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="20dp"
+                   android:text="Mob. No : "
+                   android:fontFamily="serif"
+                   />
+               <Space android:layout_width="20dp"
+                   android:layout_height="wrap_content"/>
+
+               <EditText
+                   android:id="@+id/rmob"
+                   android:layout_width="200dp"
+                   android:layout_height="wrap_content"
+                   android:textSize="20dp"
+                   android:fontFamily="serif"
+                   android:inputType="numberDecimal"
+                   />
+
+           </TableRow>
+           <TableRow android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center" >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="20dp"
+                   android:text="Email : "
+                   android:fontFamily="serif"
+                   />
+               <Space android:layout_width="20dp"
+                   android:layout_height="wrap_content"/>
+
+               <EditText
+                   android:id="@+id/rmail"
+                   android:layout_width="200dp"
+                   android:layout_height="wrap_content"
+                   android:textSize="20dp"
+                   android:fontFamily="serif"
+                   android:inputType="text"
+                   />
+
+           </TableRow>
+           <TableRow android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center" >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="20dp"
+                   android:text="Address : "
+                   android:fontFamily="serif"
+                   />
+               <Space android:layout_width="20dp"
+                   android:layout_height="wrap_content"/>
+
+               <EditText
+                   android:id="@+id/radd"
+                   android:layout_width="200dp"
+                   android:layout_height="wrap_content"
+                   android:textSize="20dp"
+                   android:fontFamily="serif"
+                   android:inputType="numberDecimal"
+                   />
+
+           </TableRow>
+           <TableRow android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center" >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="20dp"
+                   android:text="Disability : "
+                   android:fontFamily="serif"
+                   />
+               <Space android:layout_width="20dp"
+                   android:layout_height="wrap_content"/>
+
+               <EditText
+                   android:id="@+id/rdis"
+                   android:layout_width="200dp"
+                   android:layout_height="wrap_content"
+                   android:textSize="20dp"
+                   android:fontFamily="serif"
+                   android:inputType="numberDecimal"
+                   />
+
+           </TableRow>
+
+       </TableLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/copylogo"
+                    android:layout_gravity="center"
+                    />
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" copyrights reserved The Rise "
+            />
+            </TableRow>
+        </TableLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50px" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="Register"
+            android:id="@+id/rbtn"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50px" />
 
 
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
 
-    <application
-        android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.VECARE"
-        tools:targetApi="31">
-        <activity
-            android:name=".SignIn"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account." />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+                <Space 
+                    android:layout_width="50px"
+                    android:layout_height="wrap_content"
+                    />
+                
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login" />                    
+            </TableRow>
+        </TableLayout>
+        
+        
+    </LinearLayout>
 
-</manifest>
+</LinearLayout>
